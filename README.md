@@ -1,6 +1,6 @@
 # E-Peen
 
-E-Peen is a benchmarking tool for your e-peen. It's a tool that measures your pc's performance calculates a score based on the results. The higher the score, the bigger your e-peen is. It's a fun way to see how your pc stacks up against others.
+E-Peen is a benchmarking tool for your e-peen. It's a tool that measures your pc's performance and calculates a score based on the results. The higher the score, the bigger your e-peen is. It's a fun way to see how your pc stacks up against others.
 
 ## Current Features
 - CPU Benchmark
