@@ -6,10 +6,10 @@ with open("README.md", "r") as fh:
 
 setup(
     name="E-Peen",
-    version="1.0.0",
+    version="1.0.1",
     author="crosschainer",
     author_email="cross@xian.org",
-    description="",
+    description="A benchmarking tool (CPU, GPU) to measure your e-peen.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/crosschainer/e-peen",
