@@ -32,5 +32,7 @@ To use E-Peen, simply run the following command:
 e-peen
 ```
 
+![Preview](preview.png)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

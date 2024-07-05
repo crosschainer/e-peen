@@ -12,7 +12,6 @@ class CPUBenchmark():
         return result
     
     def run_single_thread_benchmark(self, duration=10):
-        print("Running single-threaded benchmark...")
         start_time = time.time()
         iterations = 0
         
@@ -20,11 +19,9 @@ class CPUBenchmark():
             self.benchmark_task()
             iterations += 1
         
-        print("Finished single-threaded benchmark")
         return iterations
 
     def run_multithreaded_benchmark(self, duration=10):
-        print("Running multithreaded benchmark...")
         start_time = time.time()
         iterations_per_worker = 100  # Number of iterations each worker will perform before checking the time
         
@@ -53,7 +50,6 @@ class CPUBenchmark():
                 for future in done_futures:
                     futures.remove(future)
 
-        print("Finished multithreaded benchmark")
         return total_iterations
     
     def run_benchmark_task(self, iterations):

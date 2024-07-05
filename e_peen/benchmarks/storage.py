@@ -23,7 +23,6 @@ class StorageBenchmark():
         return end_time - start_time
 
     def run_benchmark(self, file_path='test_file.bin', size=1000000000):
-        print("Running storage benchmark...")
         # Run write benchmark
         write_time = self.write_benchmark(file_path, size)
         # Run read benchmark
@@ -41,5 +40,8 @@ class StorageBenchmark():
         # Clean up the test file
         os.remove(file_path)
         
-        print("Finished storage benchmark")
-        return int(composite_score)
+        return {
+            'write_speed': write_speed,
+            'read_speed': read_speed,
+            'composite_score': int(composite_score)
+        }

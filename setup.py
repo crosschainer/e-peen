@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="E-Peen",
-    version="1.1.0",
+    version="1.2.0",
     author="crosschainer",
     author_email="cross@xian.org",
     description="A benchmarking tool (CPU, GPU, RAM, Storage) to measure your e-peen.",
@@ -17,7 +17,8 @@ setup(
     include_package_data=True,
     install_requires=[
         "pyopencl",
-        "numpy"
+        "numpy",
+        "rich"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

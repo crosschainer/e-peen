@@ -29,7 +29,6 @@ class RAMBenchmark():
         return end_time - start_time
 
     def run_benchmark(self, size=100000000):
-        print("Running RAM benchmark...")
         write_time = self.write_benchmark(size)
         read_time = self.read_benchmark(size)
         copy_time = self.copy_benchmark(size)
@@ -45,5 +44,9 @@ class RAMBenchmark():
 
         composite_score = (write_score + read_score + copy_score) * 1000  # Scale the score for better readability
 
-        print("Finished RAM benchmark")
-        return int(composite_score)
+        return {
+            'write_speed': write_speed,
+            'read_speed': read_speed,
+            'copy_speed': copy_speed,
+            'composite_score': int(composite_score)
+        }

@@ -43,7 +43,6 @@ class GPUBenchmark():
         return np.sum(result_np)
     
     def run_benchmark(self, duration=10):
-        print("Running GPU benchmark...")
         start_time = time.time()
         iterations = 0
         
@@ -51,5 +50,4 @@ class GPUBenchmark():
             self.benchmark_task()
             iterations += 1
 
-        print("Finished GPU benchmark")
         return iterations
