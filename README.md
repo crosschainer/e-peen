@@ -5,6 +5,8 @@ E-Peen is a benchmarking tool for your e-peen. It's a tool that measures your pc
 ## Current Features
 - CPU Benchmark
 - GPU Benchmark
+- RAM Benchmark
+- Storage Benchmark
 
 ## Installation
 

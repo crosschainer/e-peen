@@ -6,10 +6,10 @@ with open("README.md", "r") as fh:
 
 setup(
     name="E-Peen",
-    version="1.0.1",
+    version="1.1.0",
     author="crosschainer",
     author_email="cross@xian.org",
-    description="A benchmarking tool (CPU, GPU) to measure your e-peen.",
+    description="A benchmarking tool (CPU, GPU, RAM, Storage) to measure your e-peen.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/crosschainer/e-peen",
@@ -24,7 +24,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.12',
+    python_requires='>=3.11',
     entry_points={
         'console_scripts': [
             'e-peen = e_peen.app:run',
